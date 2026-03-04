@@ -316,10 +316,10 @@ export default function About() {
                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                className="fixed inset-0 flex items-center justify-center p-4 pt-24 pointer-events-none"
+                className="fixed inset-0 flex items-center justify-center p-4 pointer-events-none"
                 style={{ zIndex: 9999 }}
               >
-                <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[calc(100vh-8rem)] overflow-hidden pointer-events-auto shadow-2xl flex flex-col">
+                <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[85vh] overflow-hidden pointer-events-auto shadow-2xl flex flex-col">
                   <div className="bg-white border-b border-slate-100 p-4 flex items-center justify-between shrink-0">
                     <h2 className="text-xl font-bold text-[#1a1a1a]">Experience Overview</h2>
                     <button 

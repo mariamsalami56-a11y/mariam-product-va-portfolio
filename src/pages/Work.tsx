@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowLeft, ExternalLink, X } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -200,121 +201,125 @@ export default function Work() {
       </div>
 
       {/* Project Detail Modal */}
-      <AnimatePresence>
-        {selectedProject && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setSelectedProject(null)}
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-            />
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col"
-            >
-              <button 
+      {createPortal(
+        <AnimatePresence>
+          {selectedProject && (
+            <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6">
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 z-10 p-2 bg-white/80 backdrop-blur rounded-full hover:bg-white text-slate-800 transition-colors"
+                className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+              />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden max-h-[85vh] flex flex-col"
               >
-                <X className="w-6 h-6" />
-              </button>
-
-              <div className="overflow-y-auto custom-scrollbar">
-                <div className="h-64 sm:h-80 md:h-96 w-full relative">
-                  <img 
-                    src={selectedProject.image} 
-                    alt={selectedProject.title}
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8 md:p-12">
-                     <div className="text-white">
-                        <span className="inline-block px-3 py-1 bg-[#008543] rounded-md text-sm font-bold uppercase tracking-wider mb-3">
-                          {selectedProject.category}
-                        </span>
-                        <h2 className="text-4xl md:text-5xl font-bold font-sans leading-tight">
-                          {selectedProject.title}
-                        </h2>
-                     </div>
-                  </div>
-                </div>
-
-                <div className="p-8 md:p-12">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div className="md:col-span-2 space-y-8">
-                      <div>
-                        <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">Project Description</h3>
-                        <p className="text-lg text-slate-600 leading-relaxed">
-                          {selectedProject.overview}
-                        </p>
-                      </div>
-                      
-                      <div>
-                        <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">What I Did</h3>
-                        <ul className="list-disc pl-5 space-y-2 text-lg text-slate-600 leading-relaxed">
-                          {selectedProject.contributions.map((item, i) => (
-                            <li key={i}>{item}</li>
-                          ))}
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">My Role</h3>
-                        <p className="text-lg text-slate-600 leading-relaxed">
-                          {selectedProject.role}
-                        </p>
-                      </div>
-
-                      <div className="pt-6">
-                        <a 
-                          href={selectedProject.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a1a1a] text-white font-bold rounded-full hover:bg-[#008543] transition-colors"
-                        >
-                          Visit Live Project <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </div>
+                <div className="overflow-y-auto custom-scrollbar">
+                  <div className="h-64 sm:h-80 md:h-96 w-full relative">
+                    <img 
+                      src={selectedProject.image} 
+                      alt={selectedProject.title}
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8 md:p-12">
+                       <div className="text-white">
+                          <span className="inline-block px-3 py-1 bg-[#008543] rounded-md text-sm font-bold uppercase tracking-wider mb-3">
+                            {selectedProject.category}
+                          </span>
+                          <h2 className="text-4xl md:text-5xl font-bold font-sans leading-tight">
+                            {selectedProject.title}
+                          </h2>
+                       </div>
                     </div>
+                  </div>
 
-                    <div className="space-y-8">
-                      <div>
-                        <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Technologies & Skills</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {selectedProject.tags.map(tag => (
-                            <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-700 font-medium rounded-md text-sm">
-                              {tag}
-                            </span>
-                          ))}
+                  <div className="p-8 md:p-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                      <div className="md:col-span-2 space-y-8">
+                        <div>
+                          <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">Project Description</h3>
+                          <p className="text-lg text-slate-600 leading-relaxed">
+                            {selectedProject.overview}
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">What I Did</h3>
+                          <ul className="list-disc pl-5 space-y-2 text-lg text-slate-600 leading-relaxed">
+                            {selectedProject.contributions.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">My Role</h3>
+                          <p className="text-lg text-slate-600 leading-relaxed">
+                            {selectedProject.role}
+                          </p>
+                        </div>
+
+                        <div className="pt-6">
+                          <a 
+                            href={selectedProject.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a1a1a] text-white font-bold rounded-full hover:bg-[#008543] transition-colors"
+                          >
+                            Visit Live Project <ExternalLink className="w-4 h-4" />
+                          </a>
                         </div>
                       </div>
-                      
-                      <div className="p-6 bg-[#f9f7f2] rounded-xl border border-[#e5e0d6]">
-                        <h4 className="text-lg font-bold text-[#1a1a1a] mb-2">Need similar results?</h4>
-                        <p className="text-slate-600 mb-4 text-sm">
-                          I can help you streamline your operations or manage your next big project.
-                        </p>
-                        <a 
-                          href="https://calendly.com/mariamsalami56/30min" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-[#008543] font-bold hover:underline text-sm"
-                        >
-                          Book a Discovery Call →
-                        </a>
+
+                      <div className="space-y-8">
+                        <div>
+                          <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Technologies & Skills</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {selectedProject.tags.map(tag => (
+                              <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-700 font-medium rounded-md text-sm">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <div className="p-6 bg-[#f9f7f2] rounded-xl border border-[#e5e0d6]">
+                          <h4 className="text-lg font-bold text-[#1a1a1a] mb-2">Need similar results?</h4>
+                          <p className="text-slate-600 mb-4 text-sm">
+                            I can help you streamline your operations or manage your next big project.
+                          </p>
+                          <a 
+                            href="https://calendly.com/mariamsalami56/30min" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[#008543] font-bold hover:underline text-sm"
+                          >
+                            Book a Discovery Call →
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
+
+                <button 
+                  onClick={() => setSelectedProject(null)}
+                  className="absolute top-4 right-4 z-50 p-2 bg-white/90 backdrop-blur-md rounded-full hover:bg-white text-slate-800 shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                  aria-label="Close modal"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </div>
   );
 }
