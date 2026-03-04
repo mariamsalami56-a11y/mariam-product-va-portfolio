@@ -1,3 +1,4 @@
+
 import { Mail, Linkedin, Github, Calendar, FileText } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -15,7 +16,7 @@ export default function Footer() {
         >
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-6 leading-tight tracking-tight uppercase font-sans">
-              Stop Juggling Tasks Alone.
+              Stop Juggling Priorities.
             </h3>
             <div className="text-lg text-white/80 max-w-md mb-8 font-medium space-y-2">
               <p>Let's Make Your Projects Run Smoothly Together.</p>

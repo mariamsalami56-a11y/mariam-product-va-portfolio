@@ -50,7 +50,7 @@ const allProjects: Project[] = [
   },
   {
     title: "Treasurebox",
-    category: "Ecommerce Development",
+    category: "Project Management",
     role: "Project Manager",
     description: "Ecommerce platform for handcrafted gifts, flowers, and magical event planning.",
     overview: "Treasurebox is a niche ecommerce platform dedicated to gifting and event planning.",
@@ -59,7 +59,7 @@ const allProjects: Project[] = [
       "Coordinated the development of features for browsing handcrafted gifts, ordering flowers, and booking event planning services.",
       "Facilitated communication between stakeholders and the development team."
     ],
-    tags: ["Ecommerce", "Rapid Delivery", "Web Development"],
+    tags: ["Ecommerce", "Rapid Delivery", "Web Development", "Project Management"],
     image: "https://lh3.googleusercontent.com/d/1wp0VvM-ROS9KENBJOaX4d8_h_z6y1aW-",
     link: "https://www.treasurebox.ng"
   },

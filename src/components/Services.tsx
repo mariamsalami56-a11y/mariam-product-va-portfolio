@@ -5,18 +5,6 @@ import { useState } from "react";
 const services = [
   {
     id: "01",
-    title: "Virtual Assistance",
-    description: "Comprehensive Support For Founders, Businesses and Startups. Ways I Can Help You Grow:",
-    items: [
-      "Executive Assistance & Inbox Management",
-      "Calendar Coordination & Scheduling",
-      "Data Entry & Database Management",
-      "Internet Research & Market Analysis",
-      "Travel Planning & Logistics"
-    ]
-  },
-  {
-    id: "02",
     title: "AI & Workflow Automation",
     description: "Leveraging GenAI to Streamline Business Operations. Ways I Can Help You Grow:",
     items: [
@@ -28,29 +16,41 @@ const services = [
     ]
   },
   {
-    id: "03",
+    id: "02",
     title: "Project Management",
-    description: "Streamlining Workflows For Successful Product Development and Delivery. Ways I Can Help You Grow:",
+    description: "Streamlining workflows for successful product and project management and delivery. Ways I can help you grow:",
     items: [
       "Agile/Scrum Coordination",
-      "Cross functional team leadership",
-      "End to end product management",
-      "Product discovery",
+      "Cross-functional Team Management",
+      "End-to-End Product & Project Management",
+      "Product Discovery (User Journey & Market Research)",
       "Process Optimization & Documentation",
-      "User journey and market research",
-      "Tool Setup (ClickUp, Notion, Asana)"
+      "Tool Setup (ClickUp, Notion, Asana)",
+      "Web & Landing Page Development"
     ]
   },
   {
-    id: "04",
-    title: "Social Media Management",
-    description: "Building Your Brand Presence Across Platforms. Ways I Can Help You Grow:",
-    items: [
-      "Content Strategy & Scheduling",
-      "Community Engagement & Growth",
-      "Visual Asset Creation (Canva)",
-      "Analytics Reporting & Insights",
-      "Cross-Platform Campaign Management"
+    id: "03",
+    title: "Virtual Assistance & Social Media",
+    subSections: [
+      {
+        title: "Virtual Assistance",
+        description: "Comprehensive Support For Founders, Businesses and Startups. Ways I Can Help You Grow:",
+        items: [
+          "Executive Assistance, Inbox Management & Scheduling",
+          "Data Entry, Database Management & Market Research",
+          "Travel Planning & Logistics"
+        ]
+      },
+      {
+        title: "Social Media Management",
+        description: "Building Your Brand Presence Across Platforms. Ways I Can Help You Grow:",
+        items: [
+          "Content Strategy, Scheduling & Campaign Management",
+          "Community Engagement & Growth",
+          "Visual Asset Creation & Analytics Reporting"
+        ]
+      }
     ]
   }
 ];
@@ -105,18 +105,41 @@ export default function Services() {
                   >
                     <div className="pb-8 md:pb-12">
                       <div className="max-w-3xl">
-                        <p className="text-lg md:text-xl text-slate-600 mb-6 md:mb-8 font-medium">
-                          {service.description}
-                        </p>
-                        <ul className="space-y-3 md:space-y-4 mb-8 md:mb-10">
-                          {service.items.map((item, i) => (
-                            <li key={i} className="flex items-start gap-3 text-base md:text-lg text-slate-700">
-                              <span className="mt-2 w-1.5 h-1.5 bg-[#008543] rounded-full shrink-0" />
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                        <div>
+                        {service.subSections ? (
+                          <div className="space-y-12">
+                            {service.subSections.map((section, idx) => (
+                              <div key={idx}>
+                                <h4 className="text-xl md:text-2xl font-bold text-[#1a1a1a] mb-3">{section.title}</h4>
+                                <p className="text-lg md:text-xl text-slate-600 mb-6 font-medium">
+                                  {section.description}
+                                </p>
+                                <ul className="space-y-3 md:space-y-4">
+                                  {section.items.map((item, i) => (
+                                    <li key={i} className="flex items-start gap-3 text-base md:text-lg text-slate-700">
+                                      <span className="mt-2 w-1.5 h-1.5 bg-[#008543] rounded-full shrink-0" />
+                                      {item}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <>
+                            <p className="text-lg md:text-xl text-slate-600 mb-6 md:mb-8 font-medium">
+                              {service.description}
+                            </p>
+                            <ul className="space-y-3 md:space-y-4 mb-8 md:mb-10">
+                              {service.items?.map((item, i) => (
+                                <li key={i} className="flex items-start gap-3 text-base md:text-lg text-slate-700">
+                                  <span className="mt-2 w-1.5 h-1.5 bg-[#008543] rounded-full shrink-0" />
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        )}
+                        <div className="mt-8 md:mt-10">
                           <a 
                             href="mailto:mariamsalami56@gmail.com"
                             className="inline-block w-full md:w-auto text-center px-8 py-3 bg-[#1a1a1a] text-white font-bold rounded-full hover:bg-[#008543] transition-colors"

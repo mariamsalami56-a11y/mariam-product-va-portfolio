@@ -51,9 +51,9 @@ export default function About() {
             >
               <div className="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 rounded-2xl">
                 <img 
-                  src="https://lh3.googleusercontent.com/d/1eKnGmZJqjOani_E-3_dAhpq1SVuzfj16" 
+                  src="https://lh3.googleusercontent.com/d/1tDhAFZZJxS3DdeStjsRB9hdRf5ukjurS" 
                   alt="Mariam Salami" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -346,6 +346,7 @@ export default function About() {
 
                     <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center sticky bottom-0 mt-4">
                       <button 
+                        onClick={() => setIsResumeOpen(false)}
                         className="inline-flex items-center gap-2 px-6 py-3 bg-[#008543] text-white font-bold rounded-lg hover:bg-[#1a1a1a] transition-colors"
                       >
                         <Download className="w-4 h-4" /> Download Full Resume

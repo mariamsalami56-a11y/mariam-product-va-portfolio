@@ -40,7 +40,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-lg md:text-2xl text-gray-600 max-w-2xl font-light leading-relaxed mb-10">
-            I’m Mariam - your dedicated Project Support and Virtual Assistant helping founders streamline systems, manage projects, and bring structure to fast-moving businesses.
+            Looking for reliable project support and management to keep your business organized? I’m Mariam. I help founders streamline systems, manage projects to delivery, and bring structure and automation to fast-moving businesses.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
