@@ -37,7 +37,8 @@ const services = [
         title: "Virtual Assistance",
         description: "Comprehensive Support For Founders, Businesses and Startups. Ways I Can Help You Grow:",
         items: [
-          "Executive Assistance, Inbox Management & Scheduling",
+          "Executive Assistance, Client / Partner / Vendor Management",
+          "Project Support",
           "Data Entry, Database Management & Market Research",
           "Travel Planning & Logistics"
         ]
@@ -47,6 +48,7 @@ const services = [
         description: "Building Your Brand Presence Across Platforms. Ways I Can Help You Grow:",
         items: [
           "Content Strategy, Scheduling & Campaign Management",
+          "Meta Ads Campaign Setup",
           "Community Engagement & Growth",
           "Visual Asset Creation & Analytics Reporting"
         ]

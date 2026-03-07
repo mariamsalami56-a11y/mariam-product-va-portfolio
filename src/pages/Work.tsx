@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowLeft, ExternalLink, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import Services from "../components/Services";
 
 interface Project {
   title: string;
@@ -172,6 +173,11 @@ export default function Work() {
           ))}
         </div>
 
+      </div>
+      
+      <Services />
+
+      <div className="container mx-auto px-6">
         {/* About Me Redirect Section */}
         <div className="bg-[#f9f7f2] border border-[#e5e0d6] p-12 md:p-20 text-center mb-20 rounded-3xl">
           <h2 className="text-3xl md:text-5xl font-sans font-bold text-[#1a1a1a] mb-6">
