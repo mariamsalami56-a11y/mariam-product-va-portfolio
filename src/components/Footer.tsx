@@ -20,7 +20,7 @@ export default function Footer() {
             </h3>
             <div className="text-lg text-white/80 max-w-md mb-8 font-medium space-y-2">
               <p>Let's Make Your Projects Run Smoothly Together.</p>
-              <p>Hire the right support who keeps your business running smoothly.</p>
+              <p>Hire the right support who keeps your business running always.</p>
             </div>
             <div className="flex gap-4">
               <a 

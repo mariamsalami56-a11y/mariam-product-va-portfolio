@@ -40,7 +40,7 @@ export default function Reviews() {
   };
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-16 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div className="text-center md:text-left max-w-2xl mx-auto md:mx-0">

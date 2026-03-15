@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function WorkRedirect() {
   return (
-    <section className="py-24 bg-[#f9f7f2] border-t border-[#e5e0d6]">
+    <section className="py-16 bg-[#f9f7f2] border-t border-[#e5e0d6]">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="max-w-2xl">

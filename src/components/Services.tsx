@@ -6,7 +6,7 @@ const services = [
   {
     id: "01",
     title: "AI & Workflow Automation",
-    description: "Leveraging GenAI to Streamline Business Operations. Ways I Can Help You Grow:",
+    description: "Leverage AI automation to Streamline Your Business Operations. Ways I Can Help You Grow:",
     items: [
       "Custom GPT & AI Agent Setup",
       "Automated Email & CRM Workflows",
@@ -18,14 +18,14 @@ const services = [
   {
     id: "02",
     title: "Project Management",
-    description: "Streamlining workflows for successful product and project management and delivery. Ways I can help you grow:",
+    description: "Streamlining workflows for successful product and project management delivery. Ways I can help you grow:",
     items: [
       "Agile/Scrum Coordination",
       "Cross-functional Team Management",
       "End-to-End Product & Project Management",
       "Product Discovery (User Journey & Market Research)",
       "Process Optimization & Documentation",
-      "Tool Setup (ClickUp, Notion, Asana)",
+      "Tool Setup (ClickUp, Notion, Asana) and more",
       "Web & Landing Page Development"
     ]
   },
@@ -37,8 +37,9 @@ const services = [
         title: "Virtual Assistance",
         description: "Comprehensive Support For Founders, Businesses and Startups. Ways I Can Help You Grow:",
         items: [
-          "Executive Assistance, Client / Partner / Vendor Management",
-          "Project Support",
+          "Executive Assistance and coordination",
+          "Client / Partner / Vendor Management",
+          "Project Support and Delivery",
           "Data Entry, Database Management & Market Research",
           "Travel Planning & Logistics"
         ]
@@ -65,14 +66,14 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-white">
+    <section id="services" className="pt-10 pb-16 md:pt-16 md:pb-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="mb-12 md:mb-20">
           <h2 className="text-4xl md:text-7xl font-sans font-bold text-[#1a1a1a] mb-4 md:mb-6 leading-tight">
             Services
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl">
-            Tailored solutions to elevate your business efficiency and growth.
+            Explore a range of tailored solutions to elevate your business efficiency and growth.
           </p>
         </div>
 

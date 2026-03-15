@@ -24,10 +24,10 @@ function HomePage() {
     <>
       <Hero />
       <Tools />
-      <AboutPreview />
-      <ImageBanner />
       <Services />
+      <ImageBanner />
       <WorkRedirect />
+      <AboutPreview />
       <Reviews />
     </>
   );

@@ -19,7 +19,7 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section className="py-20 bg-[#f9f7f2] overflow-hidden border-b border-[#e5e0d6]">
+    <section className="pt-12 pb-8 bg-[#f9f7f2] overflow-hidden border-b border-[#e5e0d6]">
       <div className="container mx-auto px-6 mb-10 text-center">
         <h2 className="text-sm font-medium text-[#FF6B35] tracking-widest uppercase mb-3">My Stack</h2>
         <p className="text-3xl font-serif font-medium text-[#1a1a1a]">Tools & Technologies I Use Daily</p>

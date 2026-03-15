@@ -15,7 +15,7 @@ export default function Hero() {
 
   return (
     <section className="relative bg-white pt-32 md:pt-40 pb-0">
-      <div className="container mx-auto px-6 pb-12 md:pb-20">
+      <div className="container mx-auto px-6 pb-8 md:pb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -98,13 +98,13 @@ export default function About() {
               
               <div className="prose prose-xl text-slate-600 mb-16 font-medium leading-relaxed">
                 <p className="mb-6">
-                  I help founders, executives, and growing teams deliver projects with clarity and momentum. My focus is on turning vision into structured plans, aligning stakeholders, and keeping execution on track so you can concentrate on growth and strategy.
+                  I help businesses, busy founders / executives, and growing teams deliver projects with clarity and dedication. My focus is on turning vision into structured plans, aligning stakeholders, and keeping execution on track so you can concentrate on growth and strategy.
                 </p>
                 <p className="mb-6 font-bold text-[#1a1a1a]">
                   Here’s the reality: I’ve lived both sides.
                 </p>
                 <p className="mb-6">
-                  I’ve been the Product Manager balancing vision with execution, and I’ve been the operator driving delivery under pressure. That dual perspective gives me a unique strength—I bridge strategy and execution seamlessly, anticipating risks, aligning teams, and ensuring projects move forward with clarity and momentum.
+                  I’ve been the Product Manager balancing vision with execution, and I’ve been the operator driving delivery under pressure. That dual perspective gives me a unique strength with the ability to  bridge strategy and execution seamlessly, anticipating risks, aligning teams, and ensuring projects move forward with clarity and structure.
                 </p>
               </div>
 

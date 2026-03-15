@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutPreview() {
   return (
-    <section className="py-16 bg-white border-t border-slate-100">
+    <section className="py-12 bg-white border-t border-slate-100">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-20">
           
