@@ -6,7 +6,7 @@ const services = [
   {
     id: "01",
     title: "AI & Workflow Automation",
-    description: "Leverage AI automation to Streamline Your Business Operations. Ways I Can Help You Grow:",
+    description: "Leverage AI automation to Streamline Your Business Operations, Reduce Repetitive Tasks and Boost Efficiency by Automating your Workflows. Ways I Can Help You Grow:",
     items: [
       "Custom GPT & AI Agent Setup",
       "Automated Email & CRM Workflows",
@@ -18,7 +18,7 @@ const services = [
   {
     id: "02",
     title: "Project Management",
-    description: "Streamlining workflows for successful product and project management delivery. Ways I can help you grow:",
+    description: "From Planning to Execution, Streamlining workflows for successful product and project management delivery. Ways I can help you grow:",
     items: [
       "Agile/Scrum Coordination",
       "Cross-functional Team Management",
@@ -35,7 +35,7 @@ const services = [
     subSections: [
       {
         title: "Virtual Assistance",
-        description: "Comprehensive Support For Founders, Businesses and Startups. Ways I Can Help You Grow:",
+        description: "Get Reliable Support For Your Daily Operations & Comprehensive Support For Founders, Businesses and Startups. Ways I Can Help You Grow:",
         items: [
           "Executive Assistance and coordination",
           "Client / Partner / Vendor Management",
@@ -46,7 +46,7 @@ const services = [
       },
       {
         title: "Social Media Management",
-        description: "Building Your Brand Presence Across Platforms. Ways I Can Help You Grow:",
+        description: "Managing Your Brand Presence Across Platforms. Ways I Can Help You Grow:",
         items: [
           "Content Strategy, Scheduling & Campaign Management",
           "Meta Ads Campaign Setup",
@@ -73,7 +73,7 @@ export default function Services() {
             Services
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl">
-            Explore a range of tailored solutions to elevate your business efficiency and growth.
+            Explore tailored solutions designed to help your business run smarter, faster, and more efficiently.
           </p>
         </div>
 
@@ -144,7 +144,9 @@ export default function Services() {
                         )}
                         <div className="mt-8 md:mt-10">
                           <a 
-                            href="mailto:mariamsalami56@gmail.com"
+                            href="https://forms.gle/LucckVL77zfCh58YA"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-block w-full md:w-auto text-center px-8 py-3 bg-[#1a1a1a] text-white font-bold rounded-full hover:bg-[#008543] transition-colors"
                           >
                             Book Now

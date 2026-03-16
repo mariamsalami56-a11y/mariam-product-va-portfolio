@@ -12,7 +12,7 @@ export default function WorkRedirect() {
               Ready to see what we can build together?
             </h2>
             <p className="text-xl text-slate-600 font-medium leading-relaxed">
-              Explore a curated selection of my past projects, where I've helped businesses streamline operations and launch successful AI products.
+              Explore a curated selection of my past projects and successful product launches.
             </p>
           </div>
           

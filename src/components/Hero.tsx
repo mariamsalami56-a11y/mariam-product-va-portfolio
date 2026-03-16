@@ -40,28 +40,28 @@ export default function Hero() {
             </span>
           </h1>
           <div className="text-lg md:text-2xl text-gray-600 max-w-2xl font-light leading-relaxed mb-10 space-y-2">
-            <p>
-              Looking for reliable project support and management to keep your business organized?
+            <p className="font-bold text-[#1a1a1a]">
+              Still Juggling Projects, Tasks, and Operations alone?
             </p>
             <p>
-              I’m Mariam, I help founders streamline systems, manage projects to delivery, and bring structure and automation to fast-moving businesses.
+             Hi, I’m Mariam! I help businesses stay organized, manage projects efficiently, and build simple systems that eliminate bottlenecks and save valuable time.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
-              href="https://calendly.com/mariamsalami56/30min" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <Link 
+              to="/about" 
               className="px-8 py-4 bg-[#1a1a1a] text-white font-bold rounded-full hover:bg-[#008543] transition-all duration-300 text-center text-lg shadow-lg hover:shadow-xl"
             >
-              Book a Discovery Call
-            </a>
+              Read More About Me
+            </Link>
             <a 
-              href="mailto:mariamsalami56@gmail.com"
+              href="https://calendly.com/mariamsalami56/30min"
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="px-8 py-4 border border-gray-300 text-[#1a1a1a] font-bold rounded-full hover:border-[#008543] hover:text-[#008543] transition-all duration-300 text-center text-lg"
             >
-              Get in Touch
+              Book a Discovery Call
             </a>
           </div>
         </motion.div>

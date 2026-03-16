@@ -46,9 +46,9 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Work", href: "/work" },
-    { name: "Case Studies", href: "/case-studies" },
     { name: "About", href: "/about" },
+    { name: "Work", href: "/work" },
+    { name: "Blog", href: "/blog" },
   ];
 
   return (
@@ -62,7 +62,7 @@ export default function Navbar() {
           </Link>
           <div className="inline-flex items-center gap-2 mt-3 px-3 py-1 border border-gray-200 rounded-lg bg-gray-50 w-fit">
             <div className="w-2 h-2 bg-[#008543] rounded-full animate-pulse shadow-[0_0_8px_#008543]" />
-            <span className="text-xs md:text-sm font-medium tracking-wide text-gray-600">Project Support</span>
+            <span className="text-xs md:text-sm font-medium tracking-wide text-gray-600">Available for Projects</span>
           </div>
         </div>
 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const posts = [
   {
     id: "requirements-gathering-mistake",
-    title: "How One Requirement Gathering Mistake Cost a FinTech Startup $5,000",
+    title: "How One Requirement Gathering Mistake Cost a FinTech Startup $X,000",
     excerpt: "When I joined the team, I noticed a critical ambiguity in a feature about to launch. Here's how a quick review saved the project from a much larger disaster.",
     category: "Product Management",
     date: "Feb 24, 2026",
@@ -38,7 +38,7 @@ export default function CaseStudies() {
               transition={{ delay: index * 0.1 }}
               className="group cursor-pointer flex flex-col h-full"
             >
-              <Link to={`/case-studies/${post.id}`} className="block h-full">
+              <Link to={`/blog/${post.id}`} className="block h-full">
                 <div className="relative aspect-[16/9] overflow-hidden rounded-2xl mb-6 bg-slate-100 border border-slate-200">
                   <img 
                     src={post.image} 

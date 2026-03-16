@@ -44,9 +44,9 @@ export default function Reviews() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div className="text-center md:text-left max-w-2xl mx-auto md:mx-0">
-            <h2 className="text-4xl md:text-5xl font-sans font-bold text-[#1a1a1a] mb-4">What Clients Say</h2>
+            <h2 className="text-4xl md:text-5xl font-sans font-bold text-[#1a1a1a] mb-4">What Others Say</h2>
             <p className="text-lg text-slate-600 font-light">
-              Trusted by founders and product leaders to deliver exceptional results.
+              Trusted by Businesses, Founders and Product Leaders to deliver exceptional results.
             </p>
           </div>
           

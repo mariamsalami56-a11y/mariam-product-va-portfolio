@@ -27,7 +27,7 @@ function HomePage() {
       <Services />
       <ImageBanner />
       <WorkRedirect />
-      <AboutPreview />
+      {/* <AboutPreview /> */}
       <Reviews />
     </>
   );
@@ -44,8 +44,8 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/work" element={<Work />} />
             <Route path="/about" element={<About />} />
-            <Route path="/case-studies" element={<CaseStudies />} />
-            <Route path="/case-studies/:id" element={<BlogPost />} />
+            <Route path="/blog" element={<CaseStudies />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />

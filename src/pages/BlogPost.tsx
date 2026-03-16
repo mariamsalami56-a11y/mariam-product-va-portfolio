@@ -12,8 +12,8 @@ export default function BlogPost() {
     <article className="min-h-screen bg-white pt-40 pb-20">
       {/* Header */}
       <div className="container mx-auto px-6 max-w-4xl">
-        <Link to="/case-studies" className="inline-flex items-center gap-2 text-[#008543] hover:text-[#1a1a1a] transition-colors mb-8 group font-bold text-lg">
-          <ArrowLeft className="w-6 h-6 group-hover:-translate-x-1 transition-transform" /> Back to Case Studies
+        <Link to="/blog" className="inline-flex items-center gap-2 text-[#008543] hover:text-[#1a1a1a] transition-colors mb-8 group font-bold text-lg">
+          <ArrowLeft className="w-6 h-6 group-hover:-translate-x-1 transition-transform" /> Back to Blog
         </Link>
         
         <div className="mb-6 flex gap-3">
@@ -26,7 +26,7 @@ export default function BlogPost() {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-sans font-bold text-[#1a1a1a] mb-8 leading-tight">
-          How One Requirement Gathering Mistake Cost a FinTech Startup $5,000
+          How One Requirement Gathering Mistake Cost a FinTech Startup $X,000
         </h1>
 
         <div className="flex items-center justify-between border-b border-slate-200 pb-8 mb-12">
@@ -117,10 +117,10 @@ export default function BlogPost() {
 
           <h2 className="text-3xl font-bold text-[#1a1a1a] mt-12 mb-6">The Impact of Early Detection</h2>
           <p>
-            Because I caught this discrepancy early in my tenure, we were able to pivot before the feature went too far.
+            Because I caught this discrepancy early in my time there, we were able to pivot before the feature went too far.
           </p>
           <p>
-            The team had to scrap about a week's worth of frontend work, costing the company roughly <strong>$5,000</strong> in engineering hours.
+            The team had to scrap about a month's worth of frontend work, costing the company roughly <strong>$5,000</strong> in engineering hours.
           </p>
           <p>
             However, if this had gone to production as originally planned, it would have required a full architectural rewrite post-launch, potentially costing 10x that amount and damaging client trust.

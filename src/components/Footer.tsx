@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Github, Calendar, FileText } from "lucide-react";
+import { Mail, Linkedin, Calendar, FileText } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Footer() {
@@ -38,15 +38,6 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://github.com/mariamsalami56-a11y" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white text-[#008543] hover:bg-black hover:text-white transition-all"
-                aria-label="GitHub"
-              >
-                <Github className="w-5 h-5" />
               </a>
             </div>
           </div>
