@@ -19,7 +19,8 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section className="pt-12 pb-8 bg-[#f9f7f2] overflow-hidden border-b border-[#e5e0d6]">
+    <>
+      <section className="pt-12 pb-16 bg-[#f9f7f2] overflow-hidden border-b border-[#e5e0d6]">
       <div className="container mx-auto px-6 mb-10 text-center">
         <h2 className="text-sm font-medium text-[#FF6B35] tracking-widest uppercase mb-3">My Stack</h2>
         <p className="text-3xl font-serif font-medium text-[#1a1a1a]">Tools & Technologies I Use Daily</p>
@@ -50,6 +51,26 @@ export default function Tools() {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+
+      <section className="py-16 md:py-24 bg-white border-b border-[#e5e0d6]">
+        <div className="container mx-auto px-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full max-w-6xl mx-auto rounded-2xl overflow-hidden border border-[#e5e0d6] shadow-sm bg-slate-50"
+          >
+            <img 
+              src="https://lh3.googleusercontent.com/d/1dKw-N0Yh18OS7zgGVvdBdXSvyJUgBKG5" 
+              alt="Tools I Use" 
+              className="w-full h-auto"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
+        </div>
+      </section>
+    </>
   );
 }
