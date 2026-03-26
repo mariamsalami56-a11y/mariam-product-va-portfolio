@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Tools from "./components/Tools";
+import WhyChooseMe from "./components/WhyChooseMe";
 import Services from "./components/Services";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
@@ -17,15 +18,16 @@ import BlogPost from "./pages/BlogPost";
 import AboutPreview from "./components/AboutPreview";
 import ScrollToTop from "./components/ScrollToTop";
 import WorkRedirect from "./components/WorkRedirect";
-import ImageBanner from "./components/ImageBanner";
+import ProcessSteps from "./components/ProcessSteps";
 
 function HomePage() {
   return (
     <>
       <Hero />
       <Tools />
+      <WhyChooseMe />
       <Services />
-      <ImageBanner />
+      <ProcessSteps />
       <WorkRedirect />
       {/* <AboutPreview /> */}
       <Reviews />

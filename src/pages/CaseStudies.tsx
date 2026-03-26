@@ -25,7 +25,7 @@ export default function CaseStudies() {
           </Link>
           <h1 className="text-5xl md:text-8xl font-sans font-bold text-[#1a1a1a] mb-6">Case Studies</h1>
           <p className="text-xl md:text-2xl text-slate-600 max-w-3xl font-medium leading-relaxed">
-            Deep dives into product challenges, tool reviews, and lessons learned from the trenches of AI product management.
+            Deep dives into product challenges, tool reviews, and lessons learned from AI product management.
           </p>
         </div>
 
